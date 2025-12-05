@@ -1,34 +1,57 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>JDES Banner Generator</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            fontFamily: {
-              sans: ['Roboto', 'sans-serif'],
-              display: ['Teko', 'sans-serif'],
-            },
-            colors: {
-              jdes: {
-                blue: '#002F6C',
-                gold: '#C5A059',
-                dark: '#0f172a',
-              }
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JDES Banner Generator</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Roboto', 'sans-serif'],
+            display: ['Teko', 'sans-serif'],
+          },
+          colors: {
+            jdes: {
+              blue: '#002F6C',
+              gold: '#C5A059',
+              dark: '#0f172a',
             }
           }
         }
       }
-    </script>
-  </head>
-  <body class="bg-slate-950 text-white antialiased">
-    <div id="root"></div>
-    <script type="module" src="./index.tsx"></script>
-  </body>
+    }
+  </script>
+</head>
+<body class="bg-gradient-to-br from-slate-950 to-slate-900 text-white antialiased">
+  <div class="min-h-screen flex flex-col items-center justify-center px-4">
+    <div class="text-center max-w-2xl mx-auto">
+      <h1 class="font-display text-6xl md:text-7xl font-bold mb-4 text-jdes-gold drop-shadow-lg">
+        JDES Banner
+      </h1>
+      <p class="text-xl md:text-2xl font-light mb-8 text-slate-300">
+        Gerador de Banners para Escolas de Futebol
+      </p>
+      <div class="bg-gradient-to-r from-jdes-blue to-blue-700 rounded-lg p-8 shadow-2xl">
+        <p class="text-lg mb-6 text-blue-100">
+          Bem-vindo à Plataforma JDES!
+        </p>
+        <p class="text-sm text-blue-200 mb-6">
+          Esta aplicação está sendo preparada para oferecer um gerador completo de banners para você.
+        </p>
+        <div class="inline-block bg-jdes-gold text-jdes-dark px-8 py-3 rounded font-bold text-lg hover:bg-yellow-400 transition-colors">
+          Em Breve
+        </div>
+      </div>
+      <div class="mt-12 pt-8 border-t border-slate-700">
+        <p class="text-sm text-slate-400">
+          JDES - Escola de Futebol  |  © 2025
+        </p>
+      </div>
+    </div>
+  </div>
+</body>
 </html>
