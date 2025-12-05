@@ -1,22 +1,27 @@
 {
-  "name": "copy-of-copy-of-copy-of-jdes-banner-generator-clubes-aprovados",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
+  "name": "jdes-banner-pro",
+  "version": "1.0.0",
+  "description": "JDES Banner Generator with Authentication and Payments",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
   "dependencies": {
-    "react-dom": "^19.2.1",
-    "@google/genai": "^1.31.0",
-    "react": "^19.2.1"
+    "next": "^14.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "@supabase/supabase-js": "^2.38.0",
+    "@supabase/auth-helpers-nextjs": "^0.7.0",
+    "axios": "^1.6.0",
+    "tailwindcss": "^3.3.0"
   },
   "devDependencies": {
-    "@types/node": "^22.14.0",
-    "@vitejs/plugin-react": "^5.0.0",
-    "typescript": "~5.8.2",
-    "vite": "^6.2.0"
+    "@types/node": "^20.4.0",
+    "@types/react": "^18.2.0",
+    "typescript": "^5.2.0",
+    "autoprefixer": "^10.4.0",
+    "postcss": "^8.4.0"
   }
 }
